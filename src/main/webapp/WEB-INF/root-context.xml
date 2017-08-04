@@ -36,9 +36,9 @@
  	<bean id="dataSource"  
 	  class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
 	  <property name="driverClassName" value="oracle.jdbc.OracleDriver" />  
-	  <property name="url" value="jdbc:oracle:thin:@10.84.1.193:1521:agtp" />  
-	  <property name="username" value="spring_test" />  
-	  <property name="password" value="123456" />  
+	  <property name="url" value="jdbc:oracle:thin:@12.84.1.193:1521:ORL" />  
+	  <property name="username" value="spring" />  
+	  <property name="password" value="spring123456" />   
 	 </bean>
   
 <!-- 
@@ -62,7 +62,7 @@
                 <prop key="hibernate.show_sql">false</prop>
                 <prop key="hibernate.hbm2ddl.auto">none</prop>
                 <!-- <prop key="hibernate.hbm2ddl.auto">create-drop/create/none/update</prop> create table-->
-                <prop key="hibernate.default_schema">SPRING_TEST</prop>
+                <!-- <prop key="hibernate.default_schema">SPRING_TEST</prop> -->
                 <prop key="hibernate.format_sql">true</prop>
             </props>
         </property>
